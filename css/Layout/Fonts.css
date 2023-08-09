@@ -1,0 +1,106 @@
+/* 
+字体规范将字体分为：特大（extra-large-heading）, 大（large-heading）, 中（small-heading）, 正文（running-text），小（small-text）五大类
+通过引入class的方式为页面文字内容赋予大小和层级
+字体将搭配颜色（Tone.css）一起使用，为页面建立层级
+每个文件不引入超过三种font family
+其中特大，大，中三种字体分别对应HTML中<h1><h2><h3>三种语义化标签，正文和小字都对应非语义化标签例如<p><span>
+尽量不要修改字体字体大小和粗细 
+*/
+
+
+/* 此处可以对页面字体进行全局样式引入 */
+
+*{
+/*     当网站采用两种以上字体，请在下方单独引入 */
+}
+
+
+/* PC端 */
+
+@media screen and (min-width:1200px){
+
+    .extra-large-heading{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .large-heading{
+        font-size: 1.625rem;
+        font-weight: bold;
+    }
+
+    .small-heading{
+        font-size: 1.125rem;
+        font-weight: bold;
+    }
+
+    .running-text{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .small-text{
+        font-size: .75rem;
+        font-weight: 400;
+    }
+}
+
+/* Pad端 */
+
+@media screen and (min-width:768px) and (max-width:1200px){
+
+    .extra-large-heading{
+        font-size: 2.25rem;
+        font-weight: bold;
+    }
+
+    .large-heading{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .small-heading{
+        font-size: 1.125rem;
+        font-weight: bold;
+    }
+
+    .running-text{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .small-text{
+        font-size: .75rem;
+        font-weight: 400;
+    }
+}
+
+/* 移动端 */
+
+@media screen and (min-width:300px) and (max-width:768px){
+    
+    .extra-large-heading{
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+
+    .large-heading{
+        font-size: 1.375rem;
+        font-weight: bold;
+    }
+
+    .small-heading{
+        font-size: 1.125rem;
+        font-weight: bold;
+    }
+
+    .running-text{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .small-text{
+        font-size: .75rem;
+        font-weight: 400;
+    }
+}

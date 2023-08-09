@@ -1,0 +1,11 @@
+.breadcrumb-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.breadcrumb-item{
+    padding-left: .625rem;
+    padding-right: .625rem;
+    border-left: 1.5px solid;
+}

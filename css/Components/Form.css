@@ -1,0 +1,74 @@
+   /* 表单组件默认样式 */
+
+   .form-default {
+       max-width: 37.5rem;
+       margin: auto;
+   }
+
+   .formbold-input-flex {
+       display: flex;
+       gap: 2.5rem;
+       margin-bottom: 1.25rem;
+   }
+
+   .form-radio-wrapper {
+       display: flex;
+       flex-wrap: wrap;
+       border-bottom: 1px solid #DDE3EC;
+   }
+
+   .radio-wrapper {
+       display: flex;
+       gap: .625rem;
+       padding: .625rem;
+   }
+
+   .formbold-input-flex>div {
+       width: 50%;
+       display: flex;
+       flex-direction: column-reverse;
+   }
+
+   .formbold-textarea {
+       display: flex;
+       flex-direction: column-reverse;
+   }
+
+   .formbold-form-input {
+       width: 100%;
+       padding-bottom: .625rem;
+       padding-left: .625rem;
+       border: none;
+       border-bottom: 1px solid #DDE3EC;
+       outline: none;
+       resize: none;
+   }
+
+   .formbold-form-input::placeholder {
+       color: #666;
+   }
+
+   .formbold-form-input:focus {
+       border-color: #333;
+   }
+
+   .mandatory{
+        margin-right: .1875rem;
+        color: red;
+   }
+
+   /* 移动端 */
+   @media screen and (min-width:300px) and (max-width:768px) {
+
+       .form-radio-wrapper {
+           flex-direction: column;
+       }
+
+       .radio-wrapper {
+           padding-left: 0;
+       }
+
+       .formbold-form-input {
+           padding-left: 0;
+       }
+   }

@@ -1,0 +1,20 @@
+/* 幕布组件默认样式 */
+
+.hero{
+    background-image: url('../../assets/imgs/pexels-rachel-claire-4992820.jpg');   /* 此处可将背景色修改为图片 */
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    transition: all .15s;
+    
+}
+
+.dropshadow{
+    transition: all .15s;
+    background-color: rgba(31, 36, 33, 0.6);
+}
+
+.dropshadow:hover{
+    transition: all .15s;
+    background-color: rgba(31, 36, 33, 0.3);
+}

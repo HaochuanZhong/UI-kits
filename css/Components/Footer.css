@@ -1,0 +1,109 @@
+/* 底部导航组件默认样式及动效 */
+
+.footer{
+    background-color: #f1f1f1;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem ;
+    border-bottom: 1px solid #999;
+}
+
+.footer-nav{
+    display: flex;
+}
+
+.footer-nav-item{
+    padding: 1.25rem;
+    width: 100%;
+}
+
+.social-media{
+    display: flex;
+}
+
+.social-media-icon{
+    width: 1.5625rem;
+    padding: 1.25rem;
+    transition: all .15s;
+    opacity: 0.8;
+}
+
+.social-media-icon:hover{
+    transform: scale(1.05);
+    transition: all .15s;
+    opacity: 1;
+}
+
+.mid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem ;
+    border-bottom: 1px solid #999;
+}
+
+.contact-methods{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.footer-contact-item{
+    padding: .625rem;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .625rem;
+}
+
+.untils-item{
+    margin-left: 1.25rem;
+}
+
+/* Pad端和移动端 */
+
+@media screen and (min-width:300px) and (max-width:1000px){
+    .top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-nav-item{
+        text-align: center;
+    }
+
+    .mid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-methods{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact-item{
+        text-align: center;
+    }
+
+    .company-heading{
+        padding: 1.25rem;
+    }
+}
+

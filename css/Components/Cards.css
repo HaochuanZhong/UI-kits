@@ -1,0 +1,50 @@
+/* 卡片组件默认样式及动效 */
+
+.card-default{
+    padding: 1.25rem;
+    border-radius: .625rem;
+    background-color: whitesmoke;
+    transition: all .15s;
+    margin: .625rem;
+    cursor: pointer;
+}
+
+.card-default:hover{
+    transform: scale(1.02);
+    transition: all .15s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.05);
+}
+
+.card-img{
+    width: 100%;
+    border-radius: .625rem;
+}
+
+/* PC端 */
+
+@media screen and (min-width:1200px){
+    .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 25%); /* pc端4个 */
+    }
+
+}
+
+/* Pad端 */
+
+@media screen and (min-width:768px) and (max-width:1200px){
+
+    .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);/* pad端3个 */
+    }
+}
+
+/* 移动端 */
+
+@media screen and (min-width:300px) and (max-width:767px){
+    .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);/* 移动端1个 */
+    }
+}

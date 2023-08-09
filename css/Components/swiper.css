@@ -1,0 +1,58 @@
+/* Swiper组件css样式，此处可操作轮播宽高及背景图片 */
+
+.swiper {
+    width: 100%;
+/*     修改组件按钮&风格颜色 */
+    --swiper-theme-color: #333;
+    --swiper-navigation-color: #333;
+}
+
+.swiper-slide{
+    position: relative;
+}
+
+.bg{
+    width: 100%;
+    background-image: url('../../assets/imgs/pexels-rachel-claire-4992820.jpg'); /* 切换轮播图片 */
+}
+
+.swiper-bg-sizing{
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.nav-hover{
+    opacity: 0.5;
+    transition: all .15s;
+}
+
+.nav-hover:hover{
+    transition: all .15s;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* PC端 */
+
+@media screen and (min-width:1200px){
+    .swiper {
+        height: 25rem;
+    }
+}
+
+/* Pad端 */
+
+@media screen and (min-width:768px) and (max-width:1200px){
+    .swiper {
+        height: 18.75rem;
+    }
+}
+
+/* 移动端 */
+
+@media screen and (min-width:300px) and (max-width:767px){
+    .swiper {
+        height: 12.5rem;
+    }
+}

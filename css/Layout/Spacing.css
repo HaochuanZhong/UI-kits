@@ -1,0 +1,46 @@
+/* 
+间距采用固定的5种方式
+最小（.625rem）小（1.25rem) 中（2.5rem）大（4rem）最大（6rem）
+间距可搭配Layout.css一同使用，作为页面元素间隔开距离的标准
+间距可以使用padding, margin，或者<div class="spacing-sm">
+禁止使用margin单独操作某个元素隔开板块！请使用content和container组合区分板块间间距 
+*/
+
+.spacing-xs{
+    height: 0.625rem;
+
+}
+
+.spacing-sm{
+    height: 1.25rem;
+
+}
+
+.spacing-md{
+    height: 2.5rem;
+
+}
+
+.spacing-lg{
+    height: 4rem;
+
+}
+
+.spacing-xl{
+    height: 6rem;
+
+}
+
+/* 以下是间距使用的一个案例 */
+
+.margin-bottom-md{
+    margin-bottom: 2.5rem;
+}
+
+.margin-bottom-sm{
+    margin-bottom: 1.25rem;
+}
+
+.margin-bottom-xs{
+    margin-bottom: .625rem;
+}

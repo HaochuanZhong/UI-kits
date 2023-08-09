@@ -1,0 +1,23 @@
+/* 
+该文件应当包含所有网站需要使用到的颜色，并通过引入class的方式添加
+尽量不要在该文件以外的地方编辑颜色，需要做动效除外
+ */
+
+
+/* 以下是网站默认的黑白字体颜色，建议不要修改, 除非有特殊需求 */
+
+.font-default-black{
+    color: #333;
+}
+
+.font-default-normal{
+    color: #666;
+}
+
+.font-default-unimportant{
+    color: #999;
+}
+
+.font-default-offwhite{
+    color: #fff
+}

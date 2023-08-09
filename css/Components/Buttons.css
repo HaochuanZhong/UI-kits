@@ -1,0 +1,53 @@
+/* 按钮组件默认样式及动效 */
+
+.btn-default{
+    width: 9.375rem;
+    height: 3.125rem;
+    background-color: #333; /* 可以修改颜色 */
+    border: none;
+    border-radius: .625rem;
+    cursor: pointer;
+    transition: all .15s;
+    color: #fff;
+    font-size: 1rem;
+
+}
+
+.btn-default:hover{
+    background-color: #999; /* 可以修改颜色 */
+    transform: scale(1.01);
+    transition: all .15s;
+    color: #333;
+}
+
+.btn-offwhite{
+    width: 9.375rem;
+    height: 3.125rem;
+    background-color: transparent;
+    border: 1px solid #333; /* border颜色与字体保持一致即可 */
+    border-radius: .625rem;
+    cursor: pointer;
+    transition: all .15s;
+    color: #333;
+    font-size: 1rem;
+}
+
+.btn-offwhite:hover{
+    background-color: #666;
+    transform: scale(1.01);
+    border: none;
+    transition: all .15s;
+    color: #fff;
+}
+
+.btn-link{
+    transition: all .15s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-link:hover{
+    text-decoration: underline;
+    color: #333;
+    transition: all .15s;
+}

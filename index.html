@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <title>语芯网络科技网站样式开发模板</title>
+    <!-- 通用样式 -->
+    <link rel="stylesheet" href="./css/Layout/Layout.css" type="text/css">
+    <link rel="stylesheet" href="./css/Layout/Fonts.css" type="text/css">
+    <link rel="stylesheet" href="./css/Layout/Spacing.css" type="text/css">
+    <link rel="stylesheet" href="./css/Layout/Tone.css" type="text/css">
+    <!-- 组件样式 -->
+    <link rel="stylesheet" href="./css/Components/Buttons.css" type="text/css">
+    <link rel="stylesheet" href="./css/Components/Cards.css" type="text/css">
+    <link rel="stylesheet" href="./css/Components/Hero.css" type="text/css">
+    <link rel="stylesheet" href="./css/Components/swiper.css" type="text/css">
+    <link rel="stylesheet" href="./css/Components/import/swiper-bundle.min.css"> <!-- 轮播外部css -->
+    <link rel="stylesheet" href="./css/Components/Article.css" type="text/css">
+    <link rel="stylesheet" href="./css/Components/Navbar.css" type="text/css">
+    <link rel="stylesheet" href="./css/Components/Breadcrumb.css" type="text/css">
+    <link rel="stylesheet" href="./css/Components/Footer.css" type="text/css">
+    <link rel="stylesheet" href="./css/Components/Form.css" type="text/css">
+
+    <!-- JS引用 -->
+    <script src="./js/swiper-bundle.min.js"> </script> <!-- 轮播外部js -->
+    <script src="./js/navbar.js"> </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="container">
+            <h1 class="extra-large-heading font-default-black margin-bottom-md">语芯网络科技网站样式开发模板</h1>
+            <h2 class="large-heading font-default-black margin-bottom-sm">通用样式库</h2>
+            <h3 class="small-heading font-default-normal">2023.7.26第一版</h3>
+        </div>
+    </div>
+
+    <!--索引-->
+    <div class="content">
+        <div class="container">
+            <h2 class="large-heading font-default-black margin-bottom-sm">*通用样式索引</h2>
+            <a href="#font" class="btn-link font-default-normal">01.字体规范>></a>
+            <div class="margin-bottom-xs" style="width: 1.25rem;"></div>
+            <a href="#spacing" class="btn-link font-default-normal">02.间距规范>></a>
+            <div class="margin-bottom-xs" style="width: 1.25rem;"></div>
+            <a href="#spacing" class="btn-link font-default-normal">03.色彩规范>></a>
+        </div>
+    </div>
+
+    <!-- 字体规范 -->
+    <div class="content" id="font">
+        <div class="container">
+            <h2 class="large-heading font-default-black margin-bottom-md">01.字体规范<h2>
+                    <h1 class="extra-large-heading font-default-black margin-bottom-sm">这是最大的字体，尽量少用</h1>
+                    <h2 class="large-heading font-default-black margin-bottom-sm">这是一般的大标题，用于一些板块的标题或则和重点强调的大字</h2>
+                    <h3 class="small-heading font-default-black margin-bottom-sm">这是一般的小标题，可以用于导航，或者次级标题等权重没那么大的标题</h3>
+                    <p class="running-text font-default-normal margin-bottom-sm">这是正文："Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum."</p>
+                    <p class="small-text font-default-unimportant margin-bottom-md">这是小字: "Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+
+                    <!-- 代码展示 -->
+                    <h3 class="small-heading font-default-black">代码展示：</h3>
+                    <pre>
+                    <code class="language-html">
+                    //引入Fonts.css控制字体
+                    //引入Tone.css控制字体颜色和层级
+
+                    &lth1 class="extra-large-heading font-default-black"&gt最大字体&lt/h1>
+                    &lth2 class="large-heading font-default-black"&gt大标题&lt/h2>
+                    &lth3 class="small-heading font-default-black"&gt小标题&lt/h3>
+                    &ltp class="running-text font-default-normal"&gt正文&lt/p>
+                    &ltp class="small-text font-default-unimportant"&gt小字&lt/p>
+                    </code>
+                </pre>
+        </div>
+    </div>
+
+    <!-- 间距规范 -->
+    <div class="content" id="spacing">
+        <div class="container">
+            <h2 class="large-heading font-default-black margin-bottom-md">02.间距规范</h2>
+            <p class="running-text font-default-normal">这是最小间距0.625rem/10px</p>
+            <div class="spacing-xs margin-bottom-sm" style="background-color: #999;"></div>
+            <p class="running-text font-default-normal">这是小间距1.25rem/20px</p>
+            <div class="spacing-sm margin-bottom-sm" style="background-color: #999;"></div>
+            <p class="running-text font-default-normal">这是中等间距2.5rem/40px</p>
+            <div class="spacing-md margin-bottom-sm" style="background-color: #999;"></div>
+            <p class="running-text font-default-normal">这是大间距4rem/64px</p>
+            <div class="spacing-lg margin-bottom-sm" style="background-color: #999;"></div>
+            <p class="running-text font-default-normal">这是最大间距6rem/96px</p>
+            <div class="spacing-xl margin-bottom-md" style="background-color: #999;"></div>
+
+            <!-- 代码展示 -->
+            <h3 class="small-heading font-default-black">代码展示：</h3>
+            <pre>
+                <code class="language-html">
+                //此处无代码展示，只要记得元素间间距使用以上几个值即可:-)
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+    <!-- 色彩规范 -->
+    <div class="content" id="spacing">
+        <div class="container">
+            <h2 class="large-heading font-default-black margin-bottom-md">03.色彩规范</h2>
+            <div class="wrapper-flex-left margin-bottom-md">
+                <div style="padding: .625rem; height: 6.25rem; width: 6.25rem; border: .0625rem solid #333;">
+                    <p class="font-default-black">字体默认黑#333</p>
+                </div>
+                <div style="padding: .625rem; height: 6.25rem; width: 6.25rem; border: .0625rem solid #666;">
+                    <p class="font-default-normal">字体默认灰#666</p>
+                </div>
+                <div style="padding: .625rem; height: 6.25rem; width: 6.25rem; border: .0625rem solid #999;">
+                    <p class="font-default-unimportant">字体默认低权重#999</p>
+                </div>
+                <div style="padding: .625rem; height: 6.25rem; width: 6.25rem; background-color: #333;">
+                    <p class="font-default-offwhite">字体默认反白#fff</p>
+                </div>
+            </div>
+            <!-- 代码展示 -->
+            <h3 class="small-heading font-default-black">代码展示：</h3>
+            <pre>
+            <code class="language-html">
+                //此处无代码展示，只要记得字体使用以上默认颜色，其他元素颜色随项目设计稿而定:-)
+            </code>
+            </pre>
+        </div>
+    </div>
+
+    <!--索引-->
+    <div class="content">
+        <div class="container">
+            <h2 class="large-heading font-default-black margin-bottom-sm">*组件样式索引</h2>
+            <a href="#buttons" class="btn-link font-default-normal">04.按钮组件>></a>
+            <div class="margin-bottom-xs" style="width: 1.25rem;"></div>
+            <a href="#cards" class="btn-link font-default-normal">05.卡片组件>></a>
+            <div class="margin-bottom-xs" style="width: 1.25rem;"></div>
+            <a href="#hero" class="btn-link font-default-normal">06.幕布组件>></a>
+            <div class="margin-bottom-xs" style="width: 1.25rem;"></div>
+            <a href="#swiper" class="btn-link font-default-normal">07.轮播组件>></a>
+            <div class="margin-bottom-xs" style="width: 1.25rem;"></div>
+            <a href="#article" class="btn-link font-default-normal">08.文章组件>></a>
+            <div class="margin-bottom-xs" style="width: 1.25rem;"></div>
+            <a href="#navbar" class="btn-link font-default-normal">09.头部导航组件>></a>
+            <div class="margin-bottom-xs" style="width: 1.25rem;"></div>
+            <a href="#breadcrumb" class="btn-link font-default-normal">10.面包屑导航组件>></a>
+            <div class="margin-bottom-xs" style="width: 1.25rem;"></div>
+            <a href="#footer" class="btn-link font-default-normal">11.底部屑导航组件>></a>
+            <div class="margin-bottom-xs" style="width: 1.25rem;"></div>
+            <a href="#form" class="btn-link font-default-normal">12.表单组件>></a>
+        </div>
+    </div>
+
+    <!-- 按钮组件 -->
+    <div class="content" id="buttons">
+        <div class="container">
+            <h2 class="large-heading font-default-black margin-bottom-md">04.按钮默认样式</h2>
+            <div class="wrapper-flex-left">
+                <div class="wrapper-flex-left margin-bottom-md">
+                    <button class="btn-default">默认按钮</button>
+                    <div style="width: 1.25rem;"></div>
+                    <button class="btn-offwhite">默认按钮反白</button>
+                    <div style="width: 1.25rem;"></div>
+                    <a class="btn-link font-default-normal">链接按钮样式>></a>
+                </div>
+            </div>
+            <!-- 代码展示 -->
+            <h3 class="small-heading font-default-black">代码展示：</h3>
+            <pre>
+                <code class="language-html">
+                //引入Buttons.css控制按钮样式
+                //按钮颜色可按照设计稿进入Buttons.css调试
+                
+                &ltbutton class="btn-default">默认按钮&lt/button>
+                &ltbutton class="btn-offwhite">默认按钮反白&lt/button>
+                &lta class="btn-link font-default-normal">链接按钮样式&lt/a>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <!-- 卡片组件 -->
+    <div class="content" id="cards">
+        <div class="container">
+            <h2 class="large-heading font-default-black margin-bottom-sm">05.卡片默认样式</h2>
+            <div class="card-wrapper margin-bottom-md">
+                <div class="card-default margin-bottom-sm">
+                    <img src="./assets/placeholders/card/card-placeholder.png" class="card-img margin-bottom-sm">
+                    <div class="card-text-wrapper">
+                        <h3 class="small-heading font-default-black margin-bottom-xs">默认卡片</h3>
+                        <p class="running-text font-default-normal margin-bottom-xs">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Possimus, fugit minus eligendi consectetur.</p>
+                        <p class="small-text font-default-unimportant margin-bottom-xs">2023.7.28</p>
+                    </div>
+                </div>
+                <div class="card-default margin-bottom-sm">
+                    <img src="./assets/placeholders/card/card-placeholder.png" class="card-img margin-bottom-sm">
+                    <div class="card-text-wrapper">
+                        <h3 class="small-heading font-default-black margin-bottom-xs">默认卡片</h3>
+                        <p class="running-text font-default-normal margin-bottom-xs">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Possimus, fugit minus eligendi consectetur.</p>
+                        <p class="small-text font-default-unimportant margin-bottom-xs">2023.7.28</p>
+                    </div>
+                </div>
+                <div class="card-default margin-bottom-sm">
+                    <img src="./assets/placeholders/card/card-placeholder.png" class="card-img margin-bottom-sm">
+                    <div class="card-text-wrapper">
+                        <h3 class="small-heading font-default-black margin-bottom-xs">默认卡片</h3>
+                        <p class="running-text font-default-normal margin-bottom-xs">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Possimus, fugit minus eligendi consectetur.</p>
+                        <p class="small-text font-default-unimportant margin-bottom-xs">2023.7.28</p>
+                    </div>
+                </div>
+                <div class="card-default margin-bottom-sm">
+                    <img src="./assets/placeholders/card/card-placeholder.png" class="card-img margin-bottom-sm">
+                    <div class="card-text-wrapper">
+                        <h3 class="small-heading font-default-black margin-bottom-xs">默认卡片</h3>
+                        <p class="running-text font-default-normal margin-bottom-xs">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Possimus, fugit minus eligendi consectetur.</p>
+                        <p class="small-text font-default-unimportant margin-bottom-xs">2023.7.28</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 代码展示 -->
+            <h3 class="small-heading font-default-black">代码展示：</h3>
+            <pre>
+                    <code class="language-html">
+                    //引入Cards.css控制卡片样式
+                    //PC端一行4个，pad端3个，移动端1个
+
+                    &ltdiv class="card-wrapper>
+                        &ltdiv class="card-default">
+                         &ltimg src="./assets/placeholders/card/card-placeholder.png" class="card-img margin-bottom-sm">
+                             &ltdiv class="card-text-wrapper">
+                                &lth3 class="small-heading font-default-black margin-bottom-xs">默认卡片&lt/h3>
+                                &ltp class="running-text font-default-normal margin-bottom-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, fugit minus eligendi consectetur.&lt/p>
+                                &ltp class="small-text font-default-unimportant margin-bottom-xs">2023.7.28&lt/p>
+                            &lt/div>
+                        &lt/div>
+                    &lt/div>
+                    </code>
+                </pre>
+        </div>
+    </div>
+
+    <!-- 幕布组件 -->
+    <div class="folder" id="hero">
+        <div class="content">
+            <h2 class="large-heading font-default-black margin-bottom-md">06.幕布默认样式</h2>
+        </div>
+
+        <div class="hero margin-bottom-md">
+            <div class="dropshadow">
+                <div class="content">
+                    <div class="container">
+                        <div class="hero-text-wrapper">
+                            <h2 class="large-heading font-default-offwhite margin-bottom-sm">这是一个幕布</h2>
+                            <p class="running-text font-default-offwhite margin-bottom-sm">这是正文："Lorem ipsum dolor sit
+                                amet,
+                                consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                            <button class="btn-default">默认按钮</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 代码展示 -->
+        <div class="content">
+            <h3 class="small-heading font-default-black">代码展示：</h3>
+            <pre>
+                    <code class="language-html">
+                    //引入Hero.css控制幕布样式
+                    
+                    &ltdiv class="hero">
+                        &ltdiv class="dropshadow">
+                            &ltdiv class="content">
+                                &ltdiv class="container">
+                                    &ltdiv class="hero-text-wrapper">
+                                        &lth2 class="large-heading font-default-offwhite margin-bottom-sm">这是一个幕布&lt/h2>
+                                        &ltp class="running-text font-default-offwhite margin-bottom-sm">这是正文&lt/p>
+                                            &ltbutton class="btn-default">默认按钮&lt/button>
+                                        &lt/div>
+                                    &lt/div>
+                                &lt/div>
+                            &lt/div>
+                        &lt/div>
+                    </code>
+            </pre>
+        </div>
+    </div>
+
+    <!-- 轮播组件 -->
+    <div class="content" id="swiper">
+        <div class="container">
+            <h2 class="large-heading font-default-black margin-bottom-md">07.轮播默认样式</h2>
+            <div class="swiper margin-bottom-md">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg swiper-bg-sizing">
+                    </div>
+                    <div class="swiper-slide bg swiper-bg-sizing">
+                    </div>
+                    <div class="swiper-slide bg swiper-bg-sizing">
+                    </div>
+                </div>
+                <!-- 分页器 -->
+                <div class="swiper-pagination"></div>
+                <!-- 导航按钮 -->
+                <div class="swiper-button-prev nav-hover"></div>
+                <div class="swiper-button-next nav-hover"></div>
+            </div>
+            <!-- 代码展示 -->
+            <h3 class="small-heading font-default-black">代码展示：</h3>
+            <pre>
+                     <code class="language-html">
+                     //引入swiper.css, swiper-bundle.min.css控制样式
+                     //引入swiper-bundle.min.js控制JS
+                            
+                     &ltdiv class="swiper margin-bottom-md"> 
+                        &ltdiv class="swiper-wrapper">
+                            &ltdiv class="swiper-slide bg swiper-bg-sizing">
+                            &lt/div>
+                            &ltdiv class="swiper-slide bg swiper-bg-sizing">
+                            &lt/div>
+                            &ltdiv class="swiper-slide bg swiper-bg-sizing">
+                            &lt/div>
+                        &lt/div>
+                        &lt!-- 分页器 -->
+                        &ltdiv class="swiper-pagination">&lt/div>
+                        &lt!-- 导航按钮 -->
+                        &ltdiv class="swiper-button-prev nav-hover">&lt/div>
+                        &ltdiv class="swiper-button-next nav-hover">&lt/div>
+                    &lt/div>
+
+                    
+                    &lt!-- JS初始化 -->
+                    &ltscript>
+
+                    var mySwiper = new Swiper('.swiper', {
+                        direction: 'horizontal', // 水平轮播
+                        loop: true, // 循环模式选项
+                        //分页器
+                        pagination: {
+                            el: '.swiper-pagination',
+                        },
+                        //前进后退按钮
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        //自动播放
+                        autoplay : true,
+                        autoplay:{
+                            delay: 5000, //自动播放速度
+                            disableOnInteraction : false, //用户操作后是否停止自动播放
+                        },
+                        speed : 1000,//轮播切换速度
+                    }) 
+
+                    &lt/script>
+
+                     </code>
+            </pre>
+        </div>
+    </div>
+
+    <!-- 文章组件 -->
+    <div class="content" id="article">
+        <div class="container">
+            <h2 class="large-heading font-default-black margin-bottom-md">08.文章默认样式</h2>
+            <div class="article-left-wrapper margin-bottom-md">
+                <img class="article-img" src="./assets/imgs/pexels-rachel-claire-4992820.jpg">
+                <div class="article-text-wrapper">
+                    <h2 class="large-heading margin-bottom-sm font-default-black">这是一篇左对齐的文章的大标题</h2>
+                    <h3 class="small-heading margin-bottom-sm font-default-black">这是一篇左对齐的文章的小标题</h3>
+                    <p class="running-text font-default-normal margin-bottom-sm">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Perferendis ab sit quia incidunt ipsam maxime officiis ducimus labore ipsa
+                        repellat? Nulla, amet adipisci consectetur at officiis dolor recusandae sit vel.Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Perferendis ab sit quia incidunt ipsam maxime
+                        officiis ducimus labore ipsa repellat? Nulla, amet adipisci consectetur at officiis dolor
+                        recusandae sit vel.</p>
+                    <p class="small-text font-default-unimportant">Lorem ipsum dolor</p>
+                </div>
+            </div>
+            <div class="article-right-wrapper margin-bottom-md">
+                <div class="article-text-wrapper margin-bottom-md">
+                    <h2 class="large-heading margin-bottom-sm font-default-black">这是一篇右对齐的文章的大标题</h2>
+                    <h3 class="small-heading margin-bottom-sm font-default-black">这是一篇右对齐的文章的小标题</h3>
+                    <p class="running-text font-default-normal margin-bottom-sm">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Perferendis ab sit quia incidunt ipsam maxime officiis ducimus labore ipsa
+                        repellat? Nulla, amet adipisci consectetur at officiis dolor recusandae sit vel.Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Perferendis ab sit quia incidunt ipsam maxime
+                        officiis ducimus labore ipsa repellat? Nulla, amet adipisci consectetur at officiis dolor
+                        recusandae sit vel.</p>
+                    <p class="small-text font-default-unimportant">Lorem ipsum dolor</p>
+                </div>
+                <img class="article-img" src="./assets/imgs/pexels-rachel-claire-4992820.jpg">
+            </div>
+            <!-- 代码展示 -->
+            <h3 class="small-heading font-default-black">代码展示：</h3>
+            <pre>
+                     <code class="language-html">
+                     //引入Article.css控制样式
+                    
+                     &ltdiv class="article-left-wrapper margin-bottom-md">
+                        &ltimg class="article-img" src="./assets/imgs/pexels-rachel-claire-4992820.jpg">
+                        &ltdiv class="article-text-wrapper">
+                            &lth2 class="large-heading margin-bottom-sm font-default-black">这是一篇左对齐的文章的大标题&lt/h2>
+                            &lth3 class="small-heading margin-bottom-sm font-default-black">这是一篇左对齐的文章的小标题&lt/h3>
+                            &ltp class="running-text font-default-normal margin-bottom-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab sit quia incidunt ipsam maxime officiis ducimus labore ipsa repellat? Nulla, amet adipisci consectetur at officiis dolor recusandae sit vel.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab sit quia incidunt ipsam maxime officiis ducimus labore ipsa repellat? Nulla, amet adipisci consectetur at officiis dolor recusandae sit vel.&lt/p>
+                            &ltp class="small-text font-default-unimportant">Lorem ipsum dolor&lt/p>
+                        &lt/div>
+                    &lt/div>
+                    &ltdiv class="article-right-wrapper margin-bottom-md">
+                        &ltdiv class="article-text-wrapper margin-bottom-md">
+                            &lth2 class="large-heading margin-bottom-sm font-default-black">这是一篇右对齐的文章的大标题&lt/h2>
+                            &lth3 class="small-heading margin-bottom-sm font-default-black">这是一篇右对齐的文章的小标题&lt/h3>
+                            &ltp class="running-text font-default-normal margin-bottom-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab sit quia incidunt ipsam maxime officiis ducimus labore ipsa repellat? Nulla, amet adipisci consectetur at officiis dolor recusandae sit vel.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab sit quia incidunt ipsam maxime officiis ducimus labore ipsa repellat? Nulla, amet adipisci consectetur at officiis dolor recusandae sit vel.&lt/p>
+                            &ltp class="small-text font-default-unimportant">Lorem ipsum dolor&lt/p>
+                        &lt/div>
+                        &ltimg class="article-img" src="./assets/imgs/pexels-rachel-claire-4992820.jpg">
+                    &lt/div>
+                     </code>
+            </pre>
+        </div>
+    </div>
+
+    <!-- 头部导航组件 -->
+    <div class="folder" id="navbar">
+        <div class="content">
+            <h2 class="large-heading font-default-black margin-bottom-md">09.头部导航默认样式</h2>
+        </div>
+        <!-- pc端 -->
+        <div class="navbar margin-bottom-md">
+            <div class="content">
+                <div class="navbar-wrapper">
+                    <img class="navbar-logo" src="./assets/placeholders/nav/LOGO.png">
+                    <div class="nav-items">
+                        <a class="btn-link font-default-normal" href="">Home</a>
+                        <div class="drop-position">
+                            <a class="btn-link font-default-normal drop-btn" href="">Products<span
+                                    class="spin">+</span></a>
+                            <div class="drop-content">
+                                <p class="drop-item btn-link font-default-normal">Product one</p>
+                                <p class="drop-item btn-link font-default-normal">Product two</p>
+                                <p class="drop-item btn-link font-default-normal">Product three</p>
+                            </div>
+                        </div>
+                        <a class="btn-link font-default-normal" href="">About</a>
+                        <a class="btn-link font-default-normal" href="">Contact</a>
+                        <button class="btn-offwhite font-default-black">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- pad和移动端 -->
+        <div class="drop-position-mobile margin-bottom-md">
+            <div class="navbar-mobile">
+                <div class="content">
+                    <div class="navbar-wrapper-mobile">
+                        <img class="navbar-logo" src="./assets/placeholders/nav/LOGO.png">
+                        <img class="menu" id="menu" src="./assets/icons/menu.svg" onclick="toggleNavbar()">
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-items-mobile" id="mobile">
+                <div class="content">
+                    <div class="nav-items-mobile">
+                        <a class="btn-link font-default-normal" href="">Home</a>
+                        <a class="btn-link font-default-normal" href="">Products</a>
+                        <a class="btn-link font-default-normal" href="">About</a>
+                        <a class="btn-link font-default-normal" href="">Contact</a>
+                        <button class="btn-offwhite font-default-black">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 代码展示 -->
+        <div class="content">
+            <h3 class="small-heading font-default-black">代码展示：</h3>
+            <pre>
+                <code class="language-html">
+                //引入Navbar.css控制导航样式
+                //引入navbar.js控制JS
+
+                &lt!-- pc端 -->
+                &ltdiv class="navbar margin-bottom-md">
+                    &ltdiv class="content">
+                        &ltdiv class="navbar-wrapper">
+                            &ltimg class="navbar-logo" src="./assets/placeholders/nav/LOGO.png">
+                            &ltdiv class="nav-items">
+                                &lta class="btn-link font-default-normal" href="">Home&lt/a>
+                                &ltdiv class="drop-position">
+                                    &lta class="btn-link font-default-normal drop-btn" href="">Products&ltspan class="spin">+&lt/span>&lt/a>
+                                    &ltdiv class="drop-content">
+                                        &ltp class="drop-item btn-link font-default-normal">Product one&lt/p>
+                                        &ltp class="drop-item btn-link font-default-normal">Product two&lt/p>
+                                        &ltp class="drop-item btn-link font-default-normal">Product three&lt/p>
+                                    &lt/div>
+                                &lt/div>
+                                &lta class="btn-link font-default-normal" href="">About&lt/a>
+                                &lta class="btn-link font-default-normal" href="">Contact&lt/a>
+                                &ltbutton class="btn-offwhite font-default-black">View More&lt/button>
+                            &lt/div>
+                        &lt/div>
+                    &lt/div>
+                &lt/div>
+                &lt!-- pad和移动端 -->
+                &ltdiv class="drop-position-mobile margin-bottom-md">
+                &ltdiv class="navbar-mobile">
+                    &ltdiv class="content">
+                        &ltdiv class="navbar-wrapper-mobile">
+                            &ltimg class="navbar-logo" src="./assets/placeholders/nav/LOGO.png">
+                            &ltimg class="menu" id="menu" src="./assets/icons/menu.svg" onclick="toggleNavbar()">
+                        &lt/div>
+                    &lt/div>
+                &lt/div>
+                &ltdiv class="navbar-items-mobile" id="mobile">
+                    &ltdiv class="content">
+                        &ltdiv class="nav-items-mobile">
+                            &lta class="btn-link font-default-normal" href="">Home&lt/a>
+                            &lta class="btn-link font-default-normal" href="">Products&lt/a>
+                            &lta class="btn-link font-default-normal" href="">About&lt/a>
+                            &lta class="btn-link font-default-normal" href="">Contact&lt/a>
+                            &ltbutton class="btn-offwhite font-default-black">View More&lt/button>
+                        &lt/div>
+                    &lt/div>
+                &lt/div>
+                &lt/div>
+                </code>
+        </pre>
+        </div>
+    </div>
+
+    <!-- 面包屑导航组件 -->
+    <div class="content" id="breadcrumb">
+        <div class="container">
+            <h2 class="large-heading font-default-black margin-bottom-md">10.面包屑默认样式</h2>
+            <div class="breadcrumb-wrapper margin-bottom-md">
+                <a href="" class="font-default-unimportant running-text btn-link"
+                    style="padding-right: .625rem;">Home</a>
+                <a href="" class="breadcrumb-item font-default-unimportant running-text btn-link">Product</a>
+                <a href="" class="breadcrumb-item font-default-unimportant running-text btn-link">Shoes</a>
+                <a href="" class="breadcrumb-item font-default-black small-heading btn-link">Sneakers</a>
+            </div>
+            <!-- 代码展示 -->
+            <h3 class="small-heading font-default-black">代码展示：</h3>
+            <pre>
+                <code class="language-html">
+                //引入Breadcrumb.css控制样式
+                    
+                &ltdiv class="breadcrumb-wrapper margin-bottom-md">
+                    &lta href="" class="font-default-unimportant running-text btn-link" style="padding-right: .625rem;">Home&lt/a>
+                    &lta href="" class="breadcrumb-item font-default-unimportant running-text btn-link">Product&lt/a>
+                    &lta href="" class="breadcrumb-item font-default-unimportant running-text btn-link">Shoes&lt/a>
+                    &lta href="" class="breadcrumb-item font-default-black small-heading btn-link">Sneakers&lt/a>
+                &lt/div>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <!-- 底部导航组件 -->
+    <div class="folder" id="footer">
+        <div class="content">
+            <h2 class="large-heading font-default-black margin-bottom-md">11.底部导航默认样式</h2>
+        </div>
+        <div class="footer margin-bottom-md">
+            <div class="content">
+                <div class="top">
+                    <div class="footer-nav">
+                        <a href="" class="footer-nav-item btn-link font-default-normal">Home</a>
+                        <a href="" class="footer-nav-item btn-link font-default-normal">Products</a>
+                        <a href="" class="footer-nav-item btn-link font-default-normal">About</a>
+                        <a href="" class="footer-nav-item btn-link font-default-normal">Contact</a>
+                    </div>
+                    <div class="social-media">
+                        <a href=""><img class="social-media-icon" src="./assets/icons/微信 (1).svg"></a>
+                        <a href=""><img class="social-media-icon" src="./assets/icons/微博 (3).svg"></a>
+                        <a href=""><img class="social-media-icon" src="./assets/icons/抖音.svg"></a>
+                    </div>
+                </div>
+                <div class="mid">
+                    <h2 class="company-heading large-heading font-default-black">Company name</h2>
+                    <div class="contact-methods">
+                        <a href="" class="footer-contact-item btn-link font-default-normal">companyName@email.com</a>
+                        <a href="" class="footer-contact-item btn-link font-default-normal">+86 123456789</a>
+                        <a href="" class="footer-contact-item btn-link font-default-normal">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.</a>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p class="small-text font-default-unimportant">版权信息</p>
+                    <div class="untils">
+                        <a class="untils-item btn-link font-default-unimportant">隐私信息</a>
+                        <a class="untils-item btn-link font-default-unimportant">免责声明</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 代码展示 -->
+        <div class="content">
+            <h3 class="small-heading font-default-black">代码展示：</h3>
+            <pre>
+                <code class="language-html">
+                //引入Footer.css控制样式
+                    
+                &ltdiv class="footer margin-bottom-md">
+                    &ltdiv class="content">
+                    &ltdiv class="top">
+                        &ltdiv class="footer-nav">
+                            &lta href="" class="footer-nav-item btn-link font-default-normal">Home&lt/a>
+                            &lta href="" class="footer-nav-item btn-link font-default-normal">Products&lt/a>
+                            &lta href="" class="footer-nav-item btn-link font-default-normal">About&lt/a>
+                            &lta href="" class="footer-nav-item btn-link font-default-normal">Contact&lt/a>
+                        &lt/div>
+                        &ltdiv class="social-media">
+                            &lta  href="">&ltimg class="social-media-icon" src="./assets/icons/微信 (1).svg">&lt/a>
+                            &lta  href="">&ltimg class="social-media-icon" src="./assets/icons/微博 (3).svg">&lt/a>
+                            &lta  href="">&ltimg class="social-media-icon" src="./assets/icons/抖音.svg">&lt/a>
+                        &lt/div>
+                    &lt/div>
+                    &ltdiv class="mid">
+                        &lth2 class="company-heading large-heading font-default-black">Company name&lt/h2>
+                        &ltdiv class="contact-methods">
+                            &lta href="" class="footer-contact-item btn-link font-default-normal">companyName@email.com&lt/a>
+                            &lta href="" class="footer-contact-item btn-link font-default-normal">+86 123456789&lt/a>
+                            &lta href="" class="footer-contact-item btn-link font-default-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt/a>
+                        &lt/div>
+                    &lt/div>
+                    &ltdiv class="bottom">
+                        &ltp class="small-text font-default-unimportant">版权信息&lt/p>
+                        &ltdiv class="untils">
+                            &lta class="untils-item btn-link font-default-unimportant">隐私信息&lt/a>
+                            &lta class="untils-item btn-link font-default-unimportant">免责声明&lt/a>
+                        &lt/div>
+                    &lt/div>
+                    &lt/div>
+                &lt/div>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <!-- 表单组件 -->
+    <div class="content" id="form">
+        <div class="container">
+            <h2 class="large-heading font-default-black margin-bottom-md">12.表单默认样式</h2>
+            <form class="form-default">
+                <h3 class="small-heading font-default-black margin-bottom-sm">默认表单</h3>
+                <div class="formbold-input-flex">
+                    <div>
+                        <input type="text" name="firstname" id="firstname" placeholder="John"
+                            class="formbold-form-input font-default-black running-text" />
+                        <label for="firstname" class="font-default-black running-text margin-bottom-sm"> <span class="mandatory">*</span>First name
+                        </label>
+                    </div>
+                    <div>
+                        <input type="text" name="lastname" id="lastname" placeholder="Doe"
+                            class="formbold-form-input font-default-black running-text" />
+                        <label for="lastname" class="font-default-black running-text margin-bottom-sm"> <span class="mandatory">*</span>Last name
+                        </label>
+                    </div>
+                </div>
+
+                <div class="formbold-input-flex">
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="jhon@mail.com"
+                            class="formbold-form-input font-default-black running-text" />
+                        <label for="email" class="font-default-black running-text margin-bottom-sm"> <span class="mandatory">*</span>Mail </label>
+                    </div>
+                    <div>
+                        <input type="text" name="phone" id="phone" placeholder="(319) 555-0115"
+                            class="formbold-form-input font-default-black running-text" />
+                        <label for="phone" class="font-default-black running-text margin-bottom-sm"> Phone </label>
+                    </div>
+                </div>
+
+                <div class="margin-bottom-sm">
+                    <p class="font-default-black running-text margin-bottom-xs"><span class="mandatory">*</span>What you are looking for</p>
+                    <div class="form-radio-wrapper">
+                        <div class="radio-wrapper">
+                            <input type="radio" name="jobtitle" id="jobtitle">
+                            <p class="font-default-normal running-text">Java Dev</p>
+                        </div>
+                        <div class="radio-wrapper">
+                            <input type="radio" name="jobtitle" id="jobtitle">
+                            <p class="font-default-normal running-text">Front-end Dev</p>
+                        </div>
+                        <div class="radio-wrapper">
+                            <input type="radio" name="jobtitle" id="jobtitle">
+                            <p class="font-default-normal running-text">Designer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formbold-textarea margin-bottom-md">
+                    <textarea rows="6" name="message" id="message" placeholder="Write your message..."
+                        class="formbold-form-input font-default-black running-text"></textarea>
+                    <label for="message" class="font-default-black running-text margin-bottom-sm"> <span class="mandatory">*</span>Message </label>
+                </div>
+
+                <button class="btn-default">
+                    Submit
+                </button>
+            </form>
+            <div class="margin-bottom-md"></div>
+
+            <!-- 代码展示 -->
+            <h3 class="small-heading font-default-black">代码展示：</h3>
+            <pre>
+                <code class="language-html">
+                //引入Form.css控制样式
+                    
+                &ltform class="form-default">
+                    &lth3 class="small-heading font-default-black margin-bottom-sm">默认表单&lt/h3>
+                    &ltdiv class="formbold-input-flex">
+                        &ltdiv>
+                            &ltinput type="text" name="firstname" id="firstname" placeholder="John"
+                                class="formbold-form-input font-default-black running-text" />
+                            &ltlabel for="firstname" class="font-default-black running-text margin-bottom-sm"> &ltspan class="mandatory">*&lt/span>First name
+                            &lt/label>
+                        &lt/div>
+                        &ltdiv>
+                            &ltinput type="text" name="lastname" id="lastname" placeholder="Doe"
+                                class="formbold-form-input font-default-black running-text" />
+                            &ltlabel for="lastname" class="font-default-black running-text margin-bottom-sm"> &ltspan class="mandatory">*&lt/span>Last name
+                            &lt/label>
+                        &lt/div>
+                    &lt/div>
+    
+                    &ltdiv class="formbold-input-flex">
+                        &ltdiv>
+                            &ltinput type="email" name="email" id="email" placeholder="jhon@mail.com"
+                                class="formbold-form-input font-default-black running-text" />
+                            &ltlabel for="email" class="font-default-black running-text margin-bottom-sm"> &ltspan class="mandatory">*&lt/span>Mail &lt/label>
+                        &lt/div>
+                        &ltdiv>
+                            &ltinput type="text" name="phone" id="phone" placeholder="(319) 555-0115"
+                                class="formbold-form-input font-default-black running-text" />
+                            &ltlabel for="phone" class="font-default-black running-text margin-bottom-sm"> Phone &lt/label>
+                        &lt/div>
+                    &lt/div>
+    
+                    &ltdiv class="margin-bottom-sm">
+                        &ltp class="font-default-black running-text margin-bottom-xs">&ltspan class="mandatory">*&lt/span>What you are looking for&lt/p>
+                        &ltdiv class="form-radio-wrapper">
+                            &ltdiv class="radio-wrapper">
+                                &ltinput type="radio" name="jobtitle" id="jobtitle">
+                                &ltp class="font-default-normal running-text">Java Dev&lt/p>
+                            &lt/div>
+                            &ltdiv class="radio-wrapper">
+                                &ltinput type="radio" name="jobtitle" id="jobtitle">
+                                &ltp class="font-default-normal running-text">Front-end Dev&lt/p>
+                            &lt/div>
+                            &ltdiv class="radio-wrapper">
+                                &ltinput type="radio" name="jobtitle" id="jobtitle">
+                                &ltp class="font-default-normal running-text">Designer&lt/p>
+                            &lt/div>
+                        &lt/div>
+                    &lt/div>
+    
+                    &ltdiv class="formbold-textarea margin-bottom-md">
+                        &lttextarea rows="6" name="message" id="message" placeholder="Write your message..."
+                            class="formbold-form-input font-default-black running-text">&lt/textarea>
+                        &ltlabel for="message" class="font-default-black running-text margin-bottom-sm"> &ltspan class="mandatory">*&lt/span>Message &lt/label>
+                        &lt/div>
+    
+                    &ltbutton class="btn-default">
+                        Submit
+                    &lt/button>
+                &lt/form>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <!-- 底部信息 -->
+    <div class="font-default-normal" style="background-color: lightgray; text-align: center;">语芯网络2023</div>
+</body>
+
+<script>
+    /* 代码显示 */
+    hljs.highlightAll();
+
+    /* 初始化swiper */
+    var mySwiper = new Swiper('.swiper', {
+        direction: 'horizontal', // 水平轮播
+        loop: true, // 循环模式选项
+        //分页器
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        //前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        //自动播放
+        autoplay: true,
+        autoplay: {
+            delay: 5000, //自动播放速度
+            disableOnInteraction: false, //用户操作后是否停止自动播放
+        },
+        speed: 1000,//轮播切换速度
+    })
+</script>
+
+</html>

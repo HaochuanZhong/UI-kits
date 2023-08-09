@@ -1,0 +1,43 @@
+
+.article-left-wrapper{
+    display: flex;
+    align-items:start;
+    justify-content: space-between;
+}
+
+.article-right-wrapper{
+    display: flex;
+    align-items:start;
+    justify-content: space-between;
+}
+
+.article-text-wrapper{
+    width: 55%;
+}
+
+.article-img{
+    width: 40%;
+}
+
+
+/* 移动端 */
+@media screen and (min-width:300px) and (max-width:767px){
+
+    .article-left-wrapper{
+        display: block;
+    }
+
+    .article-right-wrapper{
+        display: block;
+    }
+
+    .article-text-wrapper{
+        width: 100%;
+    }
+
+    .article-img{
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+    
+}

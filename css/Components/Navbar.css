@@ -1,0 +1,142 @@
+/* 头部导航组件默认样式及动效 */
+
+.navbar{
+    background-color: #f1f1f1;
+}
+
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+.nav-items a{
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.navbar-logo{
+    width: 6.25rem;
+}
+
+.drop-position{
+    position: relative;
+}
+
+.drop-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 150px;
+    padding-top: .625rem;
+}
+
+.drop-item{
+    padding: .9375rem;
+}
+
+.drop-position:hover .drop-btn .spin{
+    display: inline-block;
+    transform: rotate(-180deg);
+    transform-origin: center;
+    transition: all .15s;
+}
+
+.drop-position:hover .drop-content{
+    transition: all .15s;
+    display: block;
+}
+
+/* PC端 */
+
+@media screen and (min-width:1000px){
+    .navbar-mobile{
+        display: none;
+    }
+
+    .navbar-items-mobile{
+        display: none;
+    }
+
+    
+}
+
+/* Pad端和移动端 */
+
+@media screen and (min-width:300px) and (max-width:1000px){
+    .drop-position-mobile{
+        position: relative;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .navbar-mobile{
+        background-color: #f1f1f1;
+    }
+
+    .menu{
+        width: 1.875rem;
+        cursor: pointer;
+        transition: all .15s;
+        padding: .625rem;
+    }
+
+    .menu-active{
+        width: 1.875rem;
+        cursor: pointer;
+        transition: all .15s;
+        padding: .625rem;
+        background-color: #999;
+        transition: all .15s;
+        transform: scale(1.1);
+    }
+
+    .navbar-wrapper-mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: .625rem;
+        padding-bottom: .625rem;
+    }
+
+    .nav-items-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1.25rem;
+        background-color: #fff;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-items-mobile a{
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-items-mobile{
+        width: 100%;
+        display: block;
+        height: 0px;
+        overflow: hidden;
+        transition: all .15s ease;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .responsive{
+        height: 20rem;
+        transition: all .15s ease;
+    }
+}

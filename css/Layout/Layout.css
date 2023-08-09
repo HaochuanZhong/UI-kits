@@ -1,0 +1,73 @@
+/* 
+Layout.css为作用于全局的基础样式，其中包含content, container, wrapper三个基础的页面布局容器
+content作为包裹元素板块最基础的容器，用于控制板块在页面中的宽度和横向排布
+container作为content的下一级元素，用于控制板块在页面中的高度和纵向排布
+wrapper作为内容排布的基础模式，尽量使用flex或者grid进行排版操作，尽量不使用float等容易导致页面塌陷的属性
+content和container作为基础页面排版样式成对出现
+该文件仅包括基础的排版样式，如果需要创建新的样式，可遵循：例content-xxx来添加新的class
+具体与运用方法可查询index.html中展示的Demo 
+*/
+
+
+/* 清除页面默认样式 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* PC端 */
+
+@media screen and (min-width:1200px){
+
+    .content{
+        max-width: 87.5rem;
+        width: 60%;
+        margin: auto;
+    }
+    
+    .container{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
+
+/* Pad端 */
+
+@media screen and (min-width:768px) and (max-width:1200px){
+
+    .content{
+        max-width: 80%;
+        margin: auto;
+    }
+    
+    .container{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+/* 移动端 */
+
+@media screen and (min-width:300px) and (max-width:768px){
+
+    .content{
+        max-width: 90%;
+        margin: auto;
+    }
+    
+    .container{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+/* 以下是wrapper使用的案例 */
+
+.wrapper-flex-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
